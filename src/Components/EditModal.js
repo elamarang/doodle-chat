@@ -23,7 +23,7 @@ handleInputChange = e =>{
 }
 handleSubmit = e => {
   e.preventDefault()
-  fetch('http://localhost:3000/update',{
+  fetch('https://stormy-taiga-19928.herokuapp.com/update',{
       method: 'post',
       headers: {'Content-Type':'application/json'},
       body:JSON.stringify({

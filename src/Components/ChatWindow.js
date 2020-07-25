@@ -21,7 +21,7 @@ import ListGroup from 'react-bootstrap/ListGroup'
       }
 
       setMsgs =() =>{
-        fetch('http://localhost:3000/msgs',{
+        fetch('https://stormy-taiga-19928.herokuapp.com/msgs',{
             method: 'post',
             headers: {'Content-Type':'application/json'},
             body:JSON.stringify({
@@ -44,7 +44,7 @@ import ListGroup from 'react-bootstrap/ListGroup'
       }
     handleSubmit = e => {
         e.preventDefault()
-        fetch('http://localhost:3000/sendmsg',{
+        fetch('https://stormy-taiga-19928.herokuapp.com/sendmsg',{
       method: 'post',
       headers: {'Content-Type':'application/json'},
       body:JSON.stringify({

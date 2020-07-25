@@ -22,7 +22,7 @@ componentDidUpdate(prevProps){
 }
 handleSubmit = e => {
   e.preventDefault()
-  fetch('http://localhost:3000/add',{
+  fetch('https://stormy-taiga-19928.herokuapp.com/add',{
       method: 'post',
       headers: {'Content-Type':'application/json'},
       body:JSON.stringify({

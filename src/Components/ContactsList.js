@@ -20,7 +20,7 @@ class ContactsList extends Component {
         } 
     }
      deleteItem = (id) => {
-        fetch('http://localhost:3000/remove',{
+        fetch('https://stormy-taiga-19928.herokuapp.com/remove',{
       method: 'post',
       headers: {'Content-Type':'application/json'},
       body:JSON.stringify({
