@@ -13,7 +13,7 @@ class App extends Component {
     }
   }
 componentDidMount(){
-  fetch('http://localhost:3000/users').then(Response=>Response.json())
+  fetch('https://stormy-taiga-19928.herokuapp.com/users').then(Response=>Response.json())
   .then(users=>{
     if(users!=='not found')
     this.setState({users: users})
@@ -22,9 +22,9 @@ componentDidMount(){
   });
 }
   refreshList= ()=> {
-    for(let i=0;i<2;i++){
+    for(let i=0;i<3;i++){
       console.log('entered refresh zone');
-      fetch('http://localhost:3000/users').then(Response=>Response.json())
+      fetch('https://stormy-taiga-19928.herokuapp.com/users').then(Response=>Response.json())
     .then(users=>{
       if(users!=='not found')
       this.setState({users: users})
