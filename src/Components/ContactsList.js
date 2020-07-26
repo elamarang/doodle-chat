@@ -46,7 +46,7 @@ class ContactsList extends Component {
         return (
             <div>
                 <hr/>
-                <Table className='table-responsive' striped bordered hover variant="dark">
+                <Table striped bordered hover variant="dark">
                 <thead>
                     <tr>
                     <th>Name</th>
